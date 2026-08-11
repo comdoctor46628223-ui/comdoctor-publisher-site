@@ -37,6 +37,8 @@ h2 { margin: 8px 0 24px; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2
 h3 { margin-top: 0; }
 .lead { max-width: 690px; color: var(--muted); font-size: 1.18rem; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.download-meta { color: var(--muted); font-size: .9rem; }
+.download-meta code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 .button { display: inline-block; padding: 12px 20px; border: 1px solid var(--brand); border-radius: 10px; background: var(--brand); color: white; font-weight: 700; text-decoration: none; }
 .button.secondary { background: white; color: var(--brand-dark); }
 main > section:not(.hero) { padding: 82px 0; border-top: 1px solid var(--line); }
@@ -48,6 +50,7 @@ main > section:not(.hero) { padding: 82px 0; border-top: 1px solid var(--line); 
 .steps li { display: flex; align-items: flex-start; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--line); }
 .steps span { min-width: 30px; height: 30px; border-radius: 50%; background: var(--brand); color: white; text-align: center; font-weight: 800; line-height: 30px; }
 .notice p { margin: 7px 0; }
+.install-title { margin-top: 34px; }
 details { margin-bottom: 12px; }
 summary { cursor: pointer; font-weight: 750; }
 .document { max-width: 780px; padding: 80px 0 100px; }
