@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="컴닥터 퍼블리셔는 소셜 미디어 영상을 예약하고 공식 API로 전송하는 무료 로컬 데스크톱 앱입니다."
+    />
+    <title>컴닥터 퍼블리셔 | ComDoctor Publisher</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="컴닥터 퍼블리셔 홈">
+        <img src="favicon.svg" alt="" width="36" height="36" />
+        <span>컴닥터 퍼블리셔</span>
+      </a>
+      <nav aria-label="주요 메뉴">
+        <a href="#features">기능</a>
+        <a href="#tiktok">TikTok 사용법</a>
+        <a href="support.html">지원</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">FREE LOCAL DESKTOP PUBLISHER</p>
+        <h1>영상 예약과 전송을<br />한곳에서 관리하세요.</h1>
+        <p class="lead">
+          컴닥터 퍼블리셔는 사용자의 컴퓨터에서 실행되는 무료 데스크톱
+          앱입니다. 월 구독이나 Postiz Cloud 계정 없이 공식 플랫폼 API로
+          영상을 전송합니다.
+        </p>
+        <div class="actions">
+          <a class="button" href="#how-it-works">작동 방식 보기</a>
+          <a class="button secondary" href="support.html">설치 지원 받기</a>
+        </div>
+      </section>
+
+      <section id="features" aria-labelledby="features-title">
+        <p class="eyebrow">WHAT IT DOES</p>
+        <h2 id="features-title">게시 준비에 필요한 핵심 기능</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>로컬 우선</h3>
+            <p>계정 설정, 예약, 미디어와 토큰을 사용자의 컴퓨터에 저장합니다.</p>
+          </article>
+          <article class="card">
+            <h3>여러 계정 예약</h3>
+            <p>플랫폼과 계정을 선택해 각 계정의 영상 전송 시점을 관리합니다.</p>
+          </article>
+          <article class="card">
+            <h3>공식 API 연결</h3>
+            <p>브라우저 쿠키나 비공식 자동화를 사용하지 않고 OAuth로 연결합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tiktok" class="split" aria-labelledby="tiktok-title">
+        <div>
+          <p class="eyebrow">TIKTOK UPLOAD API</p>
+          <h2 id="tiktok-title">공개 여부는 사용자가 직접 결정합니다</h2>
+          <p>
+            앱은 사용자가 선택한 MP4 영상 한 개를 TikTok 공식 Upload API로
+            TikTok 받은 편지함에 전송합니다. 앱이 자동 공개하거나 공개 범위를
+            대신 선택하지 않습니다.
+          </p>
+        </div>
+        <ol class="steps">
+          <li><span>1</span>컴닥터 퍼블리셔에서 TikTok 계정을 OAuth로 연결합니다.</li>
+          <li><span>2</span>전송할 MP4 영상 한 개와 전송 시점을 선택합니다.</li>
+          <li><span>3</span>TikTok 앱 알림을 열어 제목과 공개 범위를 확인합니다.</li>
+          <li><span>4</span>사용자가 TikTok 앱의 게시 버튼을 눌러 완료합니다.</li>
+        </ol>
+      </section>
+
+      <section id="how-it-works" aria-labelledby="requirements-title">
+        <p class="eyebrow">REQUIREMENTS</p>
+        <h2 id="requirements-title">사용 조건</h2>
+        <div class="notice">
+          <p><strong>지원 파일:</strong> MP4 영상 1개</p>
+          <p><strong>TikTok 권한:</strong> 기본 프로필 확인 및 받은 편지함 업로드</p>
+          <p><strong>최종 게시:</strong> TikTok 모바일 앱에서 사용자가 직접 완료</p>
+          <p><strong>비용:</strong> 컴닥터 퍼블리셔 월 구독료 없음</p>
+        </div>
+      </section>
+
+      <section class="faq" aria-labelledby="faq-title">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq-title">자주 묻는 질문</h2>
+        <details>
+          <summary>TikTok에 바로 공개되나요?</summary>
+          <p>아니요. 영상은 TikTok 받은 편지함으로 전송되며 사용자가 TikTok 앱에서 공개 범위를 선택하고 게시해야 합니다.</p>
+        </details>
+        <details>
+          <summary>로그인 정보가 외부 서버에 저장되나요?</summary>
+          <p>앱 운영자가 별도 클라우드 계정 서버를 제공하지 않습니다. 앱 설정과 OAuth 토큰은 사용자의 로컬 앱 데이터 폴더에 저장됩니다.</p>
+        </details>
+        <details>
+          <summary>계정 연결을 해제할 수 있나요?</summary>
+          <p>앱에서 연결을 삭제하고 TikTok 계정 설정에서 앱 권한을 철회할 수 있습니다. 자세한 내용은 데이터 삭제 안내를 확인하세요.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 ComDoctor Publisher</p>
+      <nav aria-label="정책 메뉴">
+        <a href="privacy.html">개인정보처리방침</a>
+        <a href="terms.html">이용약관</a>
+        <a href="data-deletion.html">데이터 삭제</a>
+        <a href="support.html">지원</a>
+      </nav>
+    </footer>
+  </body>
+</html>
