@@ -30,22 +30,6 @@
       <p>컴닥터 퍼블리셔로 자동으로 돌아갑니다.</p>
       <p><a id="continue" href="#">자동으로 이동하지 않으면 여기를 누르세요.</a></p>
     </main>
-    <script>
-      const callback = new URL(
-        'http://127.0.0.1:4200/integrations/social/instagram-standalone'
-      );
-      const incoming = new URLSearchParams(location.search);
-      for (const key of [
-        'code',
-        'state',
-        'error',
-        'error_reason',
-        'error_description',
-      ]) {
-        if (incoming.has(key)) callback.searchParams.set(key, incoming.get(key));
-      }
-      document.querySelector('#continue').href = callback.href;
-      location.replace(callback.href);
-    </script>
+    <script src="oauth-callback.js" data-provider="instagram-standalone"></script>
   </body>
 </html>
